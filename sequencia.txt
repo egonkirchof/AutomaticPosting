@@ -1,0 +1,23 @@
+Para cada página FB minha
+   criar um novo post
+
+Criar uma lista de posts (materias e videos)
+
+Para cada wordpress
+  para cada post
+    publicar post
+    publicar referencia a outro blog
+
+  publicar post pessoal
+
+Para cada FB
+  
+  para cada Página FB minha
+    curtir post
+
+  para cada wordpress
+    para alguns posts
+       compartilhar post
+
+
+  
