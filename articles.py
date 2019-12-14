@@ -1,25 +1,26 @@
 # -*- coding: utf-8 -*-
 
-artigos = []
-meus = []
-umartigo = []
+articles = []
+mine = []
+article = []
+mine_id = "(meu)"
 
 def a(s): # monta o artigo
-    global umartigo
-    umartigo.append(s)
+    global article
+    article.append(s)
 
 def c(): # fecha o artigo
-    global artigos,umartigo
-    if len(umartigo) != 6:
-        print "!!!! Artigo ",len(artigos), "com número incorreto de entradas:"
-        print umartigo
-        print "!!!!"
-    if umartigo[0][0:5]=='(meu)':
-        umartigo[0] = umartigo[0][5:]
-        meus.append(len(artigos))
+    global articles,article
+    if len(article) != 6:
+        print( "!!!! Article ",len(articles), ", wrong format:")
+        print( article )
+        print( "!!!!")
+    if article[0][0:len(mine_id)]==mine_id:
+        article[0] = article[0][len(mine_id):]
+        mine.append(len(articles))
         
-    artigos.append(umartigo)
-    umartigo=[]
+    articles.append(article)
+    article=[]
     
 # [youtube link]
     
@@ -241,13 +242,11 @@ a("Interessado em aprender como utilizar a BPMN para modelar processos de negóc
   "<p><br>[youtube https://youtu.be/hp7RsKLzAHQ]<br>")
 c()
 
-  
-  
-  
+    
   
     
-print "Total de artigos: ",len(artigos)
-print "Meus: ",len(meus)
+print( "Total: ",len(articles))
+print( "Mine: ",len(mine))
 
 
 
